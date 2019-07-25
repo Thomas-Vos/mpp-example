@@ -66,6 +66,12 @@ kotlin {
             }
         }
     }
+
+    sourceSets.all {
+        languageSettings {
+            enableLanguageFeature('NewInference')
+        }
+    }
 }
 
 task copyFramework {
